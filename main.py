@@ -9,7 +9,7 @@ from model import SavedTotal
 
 app = Flask(__name__)
 # app.secret_key = b'\xb6x(\xd67\x1f\xa7\x15\x92\xf1VqU\xe9|\xbcqu\xac\xf6\x16\xa8\x8f\xe5'
-app.secret_key = os.environ.get('SECRET_KEY').encode
+app.secret_key = os.environ.get('SECRET_KEY').encode()
 
 # @app.route('/')
 # def home():
